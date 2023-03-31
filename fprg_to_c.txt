@@ -1,0 +1,109 @@
+
+//.fprg to .c//
+// Quadratic equation roots caluclator//
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main ()
+{
+int a,b,c,x1,x2;
+printf("Enter the coefficient of x^2 : ");
+scanf("%d",&a);
+printf("Enter the coefficient of x : ");
+scanf("%d",&b);
+printf("Enter the value of constant (c) : ");
+scanf("%d",&c);
+x1 = -b+sqrt(b^2-4*a*c)/2*a;
+x2 = -b-sqrt(b^2-4*a*c)/2*a;
+printf("The quadratic root of equation of x1 is %d",x1);
+printf("\n The quadratic root of equation of x2 is %d",x2);
+}
+
+//factorial caluclator//
+#include <stdio.h>
+
+int factorial(int n) {
+    int f = 1;
+    for (int i = 1; i <= n; i++) {
+        f = f * i;
+    }
+    return f;
+}
+
+int main() {
+    int n, result;
+    printf("Enter a number to find its factorial: ");
+    scanf("%d", &n);
+    result = factorial(n);
+    printf("Factorial of %d is %d", n, result);
+    return 0;
+}
+
+//fahrenheit to celsius converter//
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main()
+{
+float fahrenheit,celsius;
+printf("Enter any vaklue of the fahrenheit number");
+scanf("%d",&fahrenheit);
+celsius = 5/9*(Fahrenheit-32);
+printf("The celsius is %f",celsius);
+}
+
+//Swapping of numbers without third variable//
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+int main ()
+{
+int a,b;
+printf("Enter the value of a");
+scanf("%d",&a);
+printf("Enter any value for b");
+scanf("%d",&b);
+a = a+b;
+b = a-b;
+a = a-b;
+printf("After swap the new a is %d",a);
+printf("After swap the new a is %d",b);
+return 0;
+}
+
+//swapping of two numbers using third variable//
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() 
+{
+int a,b;
+printf("Enter the value of a");
+scanf("%d",&a);
+printf("Enter any value for b");
+scanf("%d",&b);
+a = b;
+b = c;
+c = a;
+printf("The value of a is %d and b is %d",a,b);
+return 0;
+}
+
+//Program to check whether the entered number is positive or negative//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n;
+
+
+
+
+
+
+

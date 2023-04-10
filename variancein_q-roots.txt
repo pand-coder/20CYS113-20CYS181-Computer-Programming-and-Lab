@@ -1,0 +1,173 @@
+Find ing the roots of a quadratic equation in various methods with learning of precedence 
+
+
+Method 1.) In this method we can see that a variable named delta is reserved for the b^2-4ac it is useful in describing the brackets were there would be no presence of complexity.
+
+Quadratic Equation took for checking is x^2-11x+28=0 where the roots are 7,4 
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+double a,b,c,delta,x1,x2;
+printf("Enter the value of a :");
+scanf("%lf",&a);
+printf("Enter the value of b : ");
+scanf("%lf",&b);
+printf("Enter the value of c : ");
+scanf("%lf",&c);
+delta = b*b - 4*a*c;
+x1 = (-b+sqrt(delta))/2*a;
+x2 = (-b-sqrt(delta))/2*a;
+printf("The quadratic root of equation of x1 is %lf",x1);
+printf("\n The quadratic root of equation of x2 is %lf",x2);
+}
+
+output attained : The quadratic root of equation of x1 is 7.000000
+                  The quadratic root of equation of x2 is 4.000000
+
+We have got the correct output 
+
+Method 2.) Including math.h library by using pow() function
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main ()
+{
+int a,b,c,x1,x2;
+printf("Enter the coefficient of x^2 : ");
+scanf("%d",&a);
+printf("Enter the coefficient of x : ");
+scanf("%d",&b);
+printf("Enter the value of constant (c) : ");
+scanf("%d",&c);
+x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+printf("The quadratic root of equation of x1 is %d",x1);
+printf("\n The quadratic root of equation of x2 is %d",x2);
+}
+
+output attained : The quadratic root of equation of x1 is 7
+                  The quadratic root of equation of x2 is 4
+
+We have got the correct output 
+
+Method 3.) In this method by using normal asterisk for inner product of sqrt()
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int a,b,c,x1,x2;
+printf("Enter the value of a :");
+scanf("%d",&a);
+printf("Enter the value of b : ");
+scanf("%d",&b);
+printf("Enter the value of c : ");
+scanf("%d",&c);
+x1 = (-b+sqrt(b*b-4*a*c))/(2*a);
+x2 = (-b-sqrt(b*b-4*a*c))/(2*a);
+printf("The quadratic root of equation of x1 is %d",x1);
+printf("\n The quadratic root of equation of x2 is %d",x2);
+}
+
+We have got the correct output 
+
+Method 4.) Using Float datatype 
+
+
+float a,b,c,x1,x2;
+x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+
+output attained : The quadratic root of equation of x1 is 7.000000
+                  The quadratic root of equation of x2 is 4.000000
+
+ We have got the correct output 
+
+
+These are the ways which i had thinkoff to do correctly. 
+
+Let's Explore the concept of precedence concept by changing the abovr program
+
+case 1 : let's remove some paranthesis in x and x2 near 2*a
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main ()
+{
+int a,b,c,x1,x2;
+printf("Enter the coefficient of x^2 : ");
+scanf("%d",&a);
+printf("Enter the coefficient of x : ");
+scanf("%d",&b);
+printf("Enter the value of constant (c) : ");
+scanf("%d",&c);
+x1 = -b+sqrt(pow(b,2)-4*a*c)/2*a;
+x2 = -b-sqrt(pow(b,2)-4*a*c)/2*a;
+printf("The quadratic root of equation of x1 is %d",x1);
+printf("\n The quadratic root of equation of x2 is %d",x2);
+}
+
+output attained : The quadratic root of equation of x1 is 7
+                  The quadratic root of equation of x2 is 4
+
+
+We have got the correct output 
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main ()
+{
+int a,b,c,x1,x2;
+printf("Enter the coefficient of x^2 : ");
+scanf("%d",&a);
+printf("Enter the coefficient of x : ");
+scanf("%d",&b);
+printf("Enter the value of constant (c) : ");
+scanf("%d",&c);
+x1 = -b+sqrt(pow(b,2)-4*a*c)/2*a;
+x2 = -b-sqrt(pow(b,2)-4*a*c)/2*a;
+printf("The quadratic root of equation of x1 is %d",x1);
+printf("\n The quadratic root of equation of x2 is %d",x2);
+}
+
+output attained : The quadratic root of equation of x1 is 7
+                  The quadratic root of equation of x2 is 4
+
+x1 = -b+sqrt(pow(b,2)-4*a*c)/(2*a);
+x2 = -b-sqrt(pow(b,2)-4*a*c)/(2*a);
+
+The quadratic root of equation of x1 is 12.500000
+ The quadratic root of equation of x2 is 9.500000
+
+output attained is wrong
+
+
+x1 = (-b+sqrt pow(b,2)-4*a*c)/2*a;
+x2 = (-b-sqrt pow(b,2)-4*a*c)/2*a;
+
+Attained compilation errors
+
+x1 = -b+sqrt b*b-4*a*c/2*a;
+x2 = -b-sqrt b*b-4*a*c/2*a;
+
+Attained compilation errors
+
+
+ 
+
+
+
+ 
+
+
+
+
+

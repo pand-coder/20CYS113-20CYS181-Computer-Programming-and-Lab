@@ -1,0 +1,160 @@
+//Create a user defined structure datatype and declare the structure variable as an array for collection of that variable as a structure datatype//
+
+#include<stdio.h>
+#include<string.h>
+struct student 
+{
+     char name[20];
+    int rollno;
+    char fathername[20];
+    char mothername[20];
+    int phonenumber;
+    double sem1sgpa;
+};
+
+void main(){
+int n, i;
+printf("Enter for the number of students :");
+scanf("%d", &n);
+if(n>0)
+{
+struct student stu[n];
+for(i=0; i<n; i++){
+printf("Enter name of the student : ");
+scanf("%s", stu[i].name);
+printf("Enter roll no of student : ");
+scanf("%d",&stu[i].rollno);
+printf("Enter the fathername of the student:");
+scanf("%s",stu[i].fathername);
+printf("Enter the mothername of the student:");
+scanf("%s",stu[i].mothername);
+printf("Enter the phonenumber of the student:");
+scanf("%d",&stu[i].phonenumber);
+printf("sem1sgpa of the student:");
+scanf("%lf",&stu[i].sem1sgpa);
+}
+for(i=0; i<n; i++)
+{
+printf("Students details:");
+printf("Name of Student = %s\n", stu[i].name);
+printf("Roll No = %d\n", stu[i].rollno);
+printf("FatherName of Student = %s\n", stu[i].fathername);
+printf("Mothername of student = %s\n",stu[i].mothername);
+printf("phonenumber of the student = %d\n",stu[i].phonenumber);
+printf("sem1sgpa of the student = %f",stu[i].sem1sgpa);
+}
+}
+printf("Invalid Input");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+#include<string.h>
+
+struct name {
+    char firstname[20];
+    char lastname[20];
+};
+
+struct student {
+    struct name nam;
+    int rollno;
+    char fathername[20];
+    char mothername[20];
+    int phonenumber;
+    double sem1sgpa;
+};
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+
+    if(n > 0) {
+        struct student stu[n];
+
+        for(i = 0; i < n; i++) {
+            printf("\nEnter the firstname of the student: ");
+            scanf("%s", stu[i].nam.firstname);
+
+            printf("Enter the lastname of the student: ");
+            scanf("%s", stu[i].nam.lastname);
+
+            printf("Enter the roll no of the student: ");
+            scanf("%d", &stu[i].rollno);
+
+            printf("Enter the father's name of the student: ");
+            scanf("%s", stu[i].fathername);
+
+            printf("Enter the mother's name of the student: ");
+            scanf("%s", stu[i].mothername);
+
+            printf("Enter the phone number of the student: ");
+            scanf("%d", &stu[i].phonenumber);
+
+            int marks[6], j, total = 0;
+
+            for(j = 0; j < 6; j++) {
+                printf("Enter marks of subject %d for student %d: ", j+1, i+1);
+                scanf("%d", &marks[j]);
+                total += marks[j];
+            }
+
+            stu[i].sem1sgpa = total / 60.0; // Assuming maximum marks for each subject is 100
+
+        }
+
+        printf("\nStudents details:\n");
+
+        for(i = 0; i < n; i++) {
+            printf("Name of Student: %s %s\n", stu[i].nam.firstname, stu[i].nam.lastname);
+            printf("Roll No: %d\n", stu[i].rollno);
+            printf("Father's Name: %s\n", stu[i].fathername);
+            printf("Mother's Name: %s\n", stu[i].mothername);
+            printf("Phone Number: %d\n", stu[i].phonenumber);
+            printf("Semester 1 SGPA: %.2f\n\n", stu[i].sem1sgpa);
+        }
+    }
+    else {
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
+
+
+
+

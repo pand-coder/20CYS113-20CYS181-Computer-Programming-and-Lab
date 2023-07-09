@@ -1,0 +1,97 @@
+simple_student-management system
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct students {
+    char name[30];
+    int age;
+    enum score {
+        A, B, C, D, F
+    } e_s;
+};
+
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    struct students b[n];
+    char grade[10];
+    int val_menu, t = 0, error;
+
+    do {
+        scanf("%d", &val_menu);
+
+        switch (val_menu) {
+            case 1:
+                if (t == n) {
+                    printf("Maximum number of students reached.\n");
+                } else {
+                    scanf("%s", b[t].name);
+                    scanf("%d", &b[t].age);
+                    scanf("%s", grade);
+                    if (strcmp(grade, "A") == 0) {
+                        b[t].e_s = A;
+                    } else if (strcmp(grade, "B") == 0) {
+                        b[t].e_s = B;
+                    } else if (strcmp(grade, "C") == 0) {
+                        b[t].e_s = C;
+                    } else if (strcmp(grade, "D") == 0) {
+                        b[t].e_s = D;
+                    } else if (strcmp(grade, "F") == 0) {
+                        b[t].e_s = F;
+                    } else {
+                        b[t].e_s = F;
+                    }
+                    t++;
+                    printf("Student added successfully.\n");
+                }
+                break;
+
+            case 2:
+                printf("List of students:\n");
+                for (int i = 0; i < t; i++) {
+                    printf("Student %d\n", i + 1);
+                    printf("Name: %s\n", b[i].name);
+                    printf("Age: %d\n", b[i].age);
+                    if (b[i].e_s == A) {
+                        printf("Score: A\n");
+                    } else if (b[i].e_s == B) {
+                        printf("Score: B\n");
+                    } else if (b[i].e_s == C) {
+                        printf("Score: C\n");
+                    } else if (b[i].e_s == D) {
+                        printf("Score: D\n");
+                    } else if (b[i].e_s == F) {
+                        printf("Score: F\n");
+                    }
+                    printf("\n");
+                }
+                break;
+
+            case 3:
+                printf("Highest-scoring student:\n");
+                int highest_score_index = -1;
+                for (int i = 0; i < t; i++) {
+                    if (b[i].e_s == A) {
+                        highest_score_index = i;
+                        break;
+                    }
+                }
+                if (highest_score_index != -1) {
+                    printf("Name: %s\n", b[highest_score_index].name);
+                    printf("Age: %d\n", b[highest_score_index].age);
+                    printf("Score: A\n");
+                }
+                printf("\n");
+                break;
+
+            case 4:
+                printf("Exiting the program. Thank you for using our system!\n");
+                break;
+        }
+    } while (val_menu != 4);
+
+    return 0;
+}

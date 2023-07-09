@@ -1,0 +1,1277 @@
+C:\Users\PAVAN_SHANMUKHA\Desktop\clanguage\demo
+C language practiced questions from basics 
+
+1.) Hello world program 
+
+
+//Author: Pavan shanmukha madhav gunda //
+// date ; 26th january 2023 //
+// Time : 20:39 pm //
+
+
+#include <stdio.h>
+void main() {
+    printf("HELLO WORLD");
+    return 0;
+	} 
+	
+2.) Ascending star pattern
+	
+#include<stdlib.h>
+#include<stdio.h>
+int main() {
+    printf(" * \n **\n ***\n ****\n *****\n");
+    return EXIT_SUCCESS;
+}
+
+3) print pattern 
+#include<stdlib.h>
+#include<stdio.h>
+int main() {
+ printf("-----------                        -----------\n");
+ printf("|         |                        |         |\n");
+ printf("|         | >>-------------------->|         |\n");
+ printf("|         |                        |         |\n");
+ printf("-----------                        -----------\n");
+ return EXIT_SUCCESS;
+}
+
+4.) sum of two  numbers 
+
+#include<stdio.h>
+int main() {
+    
+int num1,num2,sum;
+
+printf("Enter two numbers: ");
+scanf("%d %d", &num1, &num2);
+
+// caluclate the addition of the two numbers//
+
+sum = num1 + num2;
+printf("%d + %d = %d", num1, num2, sum);
+}
+
+
+
+
+#include<stdio.h>
+void main() {
+int num1,num2,sum
+printf("Enter two numbers: ")
+scanf("%d %d", &num1, &num2);
+// caluclate the addition of the two numbers//
+sum = num1 + num 2 
+}
+
+
+
+
+
+5.) Simple interest caluclator 
+
+//Question: caluclating the simple interest of the given data // 
+//Author: Pavan shanmukha madhav gunda //
+// date ; 26th january 2023 //
+// Time : 20:43 pm //
+#include <stdio.h>
+ int main() {
+    float p,n;
+    float r,si;
+    /* Formula for simple interest is simple interest = p*n*r/100; */
+    printf("Enter the value of p ");
+    scanf("%f",&p);
+    printf("Enter the value of n ");
+    scanf("%f",&n);
+    printf("Enter the value of r ");
+    scanf("%f",&r);
+    si = p*n*r/1000;
+    printf("%f",si);
+	
+6.) signed int 
+
+     #include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a = -32768;
+     printf("%d",a);
+getch();
+}
+
+7.) unsigned int 
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int b = 65539;
+ printf("%u",b);
+getch();
+}
+
+
+8.) #include<stdio.h>
+    #include<conio.h>
+    void main () {
+    char a = "a";
+    char b = 98;
+    char c = "z";
+    char d = "130";
+    unsigned char f = -130;
+    unsigned char g = -129;
+    printf("%c%c",a,b,c,d,f,g,);
+    printf("%d%d%d%d%d%d",a,b,c,d,f,g);
+    }
+
+9.) // unary operators //
+#include<stdio.h>
+void main() 
+{
+int y = 10;
+int x= 11;
+y=x+1; 
+x++;
+printf("%d",y);
+printf("%d",x);
+ }
+    
+
+
+1212 output
+
+10.) Arithemetic operators 
+
+#include<stdio.h>
+int main() 
+{
+int a,b;
+// using arithemetic operators do following operations a+b,a-b,a*b,a/b,a%b//
+printf("Enter the value of a");
+scanf("%d",&a);
+printf("Enter the value of b");
+scanf("%d",&b);
+int sum = a+b;
+int diff = a-b;
+int r_diff = b-a;
+int mul = a*b; 
+int divison = a/b;
+int modulo = a%b;
+printf("sum=%d\n",sum);
+printf("diff=%d\n",diff);
+printf("r_diff=%d\n",r_diff);
+printf("mul=%d\n",mul);
+printf("division=%d\n",divison);
+printf("modulo=%d\n",modulo);
+return 0;
+}
+
+
+#include<stdio.h>
+int main() 
+{
+int a,b;
+// using arithemetic operators do following operations a+b,a-b,a*b,a/b,a%b//
+printf("Enter the value of a\n");
+scanf("%d",&a);
+printf("Enter the value of b\n");
+scanf("%d",&b);
+printf("a+b=%d\n",a+b);
+printf("a-b=%d\n",a-b);
+printf("b-a=%d\n",b-a);
+printf("a*b=%d\n",a*b);
+printf("a/b=%d\n",a/b);
+printf("a%b=%d\n",a%b);
+return 0;
+}
+
+11.) // Assignment operators//
+#include<stdio.h>
+int main()
+{
+int a = 6;
+a+=1;
+printf("%d",a);
+return 0;
+}
+
+
+// Assignment operators//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a = 5,b,c,d;
+b=++a;
+c=a++;
+d=++a;
+printf("%d",a);
+}
+
+//Relational operators//
+#include<stdio.h>
+#include<conio.h>
+void main() 
+{
+int a=18,b=9,c,d,e=10;
+c=b++;
+d=b;
+printf("%d%",a<b<c<d);
+printf("%d",b==e);
+printf("%d",c+1>e);
+printf("%d",a+c==b>e>c+d);
+}
+#include<stdio.h>
+#include<conio.h>
+void main() 
+{
+ int a = 18,b=9,c,d,e=10,f;
+ c=b++;
+ d=b;
+ f=a>b>d<c;
+ printf("f=%d\n",f!=1);
+ printf("c=%d\n",c);
+ printf("d=%d\n",b);
+}
+//Logical operators//
+
+11.) Left shift operators
+
+     #include <stdio.h>
+int main()
+{
+int a,b,c;
+printf("Enter the value of Integer\n");
+scanf("%d",&a);
+printf("ENter the value of b that you want to shitft the operator with the given value of a\n");
+scanf("%d",&b);
+c = a<<b;
+printf("%d",c);
+return 0;
+}
+
+12.) Right shift operators 
+#include <stdio.h>
+int main()
+{
+int a,b,c;
+printf("Enter the value of Integer\n");
+scanf("%d",&a);
+printf("ENter the value of b that you want to shitft the operator with the given value of a\n");
+scanf("%d",&b);
+c = a>>b;
+printf("%d",c);
+return 0;
+}
+
+13.) // unformatted input functions -getch(),getchar(),gets()//
+
+//getch() doesn't read or print any value it belongs to the <conio.h> library.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char ch;
+    ch = getch();
+    printf("%c",ch);
+    
+}
+
+13.)b.) //getchar() function
+
+#include<stdio.h>
+void main() 
+{
+ char ch
+ch = getchar();
+printf("%c,ch);
+}
+
+
+
+ #include<stdio.h>
+void main()
+{
+    char c,h,a,r,t;
+    c = getchar();
+    printf("%c",c);
+    h = getchar();
+    printf("%c",h);
+     a = getchar();
+    printf("%c",a);
+     r = getchar();
+    printf("%c",r);
+    t = getchar();
+    printf("%c",t);
+    }
+
+C.)   #include<stdio.h>
+      void main() 
+      {
+      char ch
+      ch = gets();
+      printf("%c,ch);
+      }
+
+//unformatted output functions//
+
+
+
+#include <stdio.h>
+
+int main() {
+    float radius, area;
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+    area = 3.14 * radius * radius;
+    printf("The area of the circle is %.2f\n", area);
+    return 0;
+}
+
+//swapping a numbers with third variable //
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+printf("Enter the values of a and b"):
+scanf("%d%d",&a&b);
+printf("Before swap = %d After swap b = %d" \n",a,b);
+a = b;
+b = c;
+c = a;
+printf("After swap = %d Before swap b = %d" \n",a,b);
+}
+
+
+/* Swapping withoutthird variable */
+
+#include<stdio.h>
+#include<conio.h>'
+void main()
+{
+int a,b;
+printf("Enter the values of a and b");
+scanf("%d%d",&a&b);
+Printf("Before swap a = %d b = %d \n", a,b);
+a = a+b;
+b = a-b;
+a = a-b;
+Printf("After swap a = %d b = %d \n", a,b);
+}
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n;
+    printf("Enter the value of n : ");
+    scanf("%d",&n);
+    if(n<=100)
+    {
+        printf("Instruction : Entered number should be below 100 \n");
+       if(n%2==0)
+       printf("%d is an even number",n);
+       else 
+       printf("%d is an odd number",n);
+    }
+    else 
+    printf("Given number is not below 100");
+}
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n;
+    printf("Enter the value of n : ");
+    scanf("%d",&n);
+    if(n<=100)
+    {
+        printf("Instruction : Entered number should be below 100 \n");
+       if(n%2==0)
+       printf("%d is an even number",n);
+       else 
+       printf("%d is an odd number",n);
+    }
+    else 
+    printf("Given number is not below 100");
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int marks;
+    printf("Enter the percentage of student: ");
+    scanf("%d",&marks);
+    if(marks>=80)
+    printf("Your grade is A");
+    else if (marks>=70)
+    printf("Your grade is B");
+    else if(marks>=60)
+    printf("Your grade is c");
+    else if(marks>=50)
+    printf("Your grade is D");
+    else
+    printf("You have failed in the exam");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14.)
+//If statement//
+
+#include<stdio.h>
+#include<conio.h>
+void
+main ()
+{
+  int age;
+  printf ("Enter your age:");
+  scanf ("%d", &age);
+  if (age > 18);
+    {
+      printf ("You are a major becasuse of your age is %d", age);
+      printf ("\nyou are elgible for voting as your age is %d", age);
+    }
+  printf ("\n you are not elgible for voting as your age is %d", age);
+  printf
+    ("\n An individual who wants to vote should be above 18 years with a voter id to their respective area\n");
+  getch ();
+}
+
+
+
+14.b.)
+#include<stdio.h>
+void
+main ()
+{
+  int age;
+  printf ("Enter your age:");
+  scanf ("%d", &age);
+  if (age > 20 && age < 30)
+    {
+      printf ("your age is %d", age);
+      printf ("\n You can go coffee with me");
+    }
+  if (age > 15)
+  {
+    printf ("\nyour age is %d", age);
+  printf("\n It's time to go home,Bye");
+  }
+
+c.)
+
+//To check whether a number is a positve or negative number//
+#include<stdio.h>
+void
+main ()
+{
+  int n;
+  printf ("Enter the value of the numberb\n ");
+  scanf ("%d", &n);
+  if (n < 0)
+    {
+      printf ("%d this number is a negative number", n);
+    }
+  printf ("\n Enter positive value to get the positive output number");
+}
+
+14.d.)
+
+//To check whether the given number is divisible by 5//
+#include<stdio.h>
+void
+main ()
+{
+  int n;
+  printf ("Enter the value of the integer\n ");
+  scanf ("%d", &n);
+  if (n%5==0)
+    {
+      printf ("%d is divisible by 5", n);
+    }
+  printf ("\n To be divisible by 5 the unit's digit of the number should be 5 or 0");
+}
+
+14.e.)
+
+ //To check the largest number in the defined order of three numbers//
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the value of a,b,c \n");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b&&a>c)
+    {
+     printf(" %d is the the largest value", a);
+     }
+     if(b>a&&b>c)
+    {
+     printf("%d is the the largest value", b);
+     }
+    if(c>a&&c>b)
+    {
+     printf("%d is the the largest value", c);
+     }
+    if(a==b&&a==c)
+    {
+     printf("ALL ARE EQUAL");
+     }}
+
+15.a.) //Check whether a number is between even or odd//
+#include<stdio.h>
+void
+main ()
+{
+  int n;
+  printf ("Enter the value of n \n");
+  scanf ("%d",&n);
+  if (n % 2 == 0)
+  printf ("Given number is even \n ");
+  else
+  printf ("Given number is odd\n");
+}
+
+15.)b.)
+
+//To check whether a number is a positve or negative number//
+#include<stdio.h>
+void
+main ()
+{
+int n;
+printf ("Enter the value of the numberb\n ");
+scanf ("%d", &n);
+if (n < 0)
+ printf ("%d  is a negative number", n);
+else
+  printf ("\n %d is a positive number", n);
+}
+
+16.) //Nested-if//
+
+#include<stdio.h>
+void main()
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
+    {
+     if (a>c)
+    { 
+        printf("%d (a) is the largest number",a);
+    }
+    else 
+    {
+        printf("%d (c) is the greatest",c);
+    }
+    }
+    else 
+    { 
+    if(b>c)
+    { printf("%d (b) is the largest number",b);
+    }
+    else printf("%d is the greatest",c);
+    }}
+
+
+17.) //else-if-ladder// 
+
+    #include<stdio.h>
+void main ()
+{
+    int marks;
+    printf("Enter marks for grading \n ");
+    scanf("%d",&marks );
+    if(marks>80)
+    printf("Grade A");
+    else if (marks>70)
+    printf("Grade B");
+    else if("marks>60")
+    printf("Grade c");
+    else printf("Grade D");
+    printf("\n End of program");
+    }
+
+17.b.)
+#include<stdio.h>
+void
+main ()
+{
+  char ch;
+  printf ("Enter a character:");
+  scanf ("%c", &ch);
+  if (ch >= 'A' && ch <= 'Z')
+ {
+     printf ("%c is a Uppercase letter", ch);
+  printf ("\n ASCII value of %c = %d", ch, ch);
+     
+ }
+  else if(ch >= 'a' && ch <= 'z')
+  {
+  printf ("%c is a lowercase letter", ch);
+  printf ("\n ASCII value of %c = %d", ch, ch);
+      
+  }
+  else if (ch >= '0' && ch <= '9')
+  {
+  printf ("%c is a number", ch);
+  printf ("\n ASCII value of %c = %d", ch, ch);
+  }
+  else
+  {
+  printf ("%c is a special character", ch);
+  printf ("\n ASCII value of %c = %d", ch, ch);
+  }}
+
+18.a.) //switch statement// 
+
+#include<stdio.h>
+void main()
+{
+    int marks;
+    printf("Enter marks:");
+    scanf("%d",&marks);
+    switch(marks)
+    { 
+       
+       case 4 : 
+       case  5: printf("your grade is A");
+        break;
+        case 3 :  printf("your grade is B");
+        break;
+        case 2 :  printf("your grade is C");
+        break;
+        default :  printf("your grade is D");}
+        }
+
+18.)b.) // switch statement to use char (write a program to check whether a letter entered is a vowel or consonant) //
+#include<stdio.h>
+void main ()
+{
+char ch;
+printf("Enter ch:");
+scanf("%c", &ch);
+switch (ch)
+{
+    case 'a' : 
+    case 'e' :
+    case 'i' :
+    case 'o' :
+    case 'u' : printf("%c is a vowel",ch);
+               break;
+               default : printf("%c is a consonant",ch);
+}
+    
+}
+
+
+// cprogram to make a simple caluclator using switch//
+
+
+#include<stdio.h>
+void
+main ()
+{
+  int a, b, sum, sub, mul, _div, mod; 
+  char operator;
+  printf ("Enter operator: ");
+  scanf ("%c", &operator);
+  printf ("Enter the value of a & b : ");
+  scanf ("%d,%d", &a, &b);
+  switch (operator)
+    {
+    case '+':
+      sum = a + b;
+      printf ("sum = %d", sum);
+      break;
+
+    case '-':
+      sub = a - b;
+      printf ("sub = %d", sub);
+      break;
+
+    case '*':
+      mul = a * b;
+      printf ("mul=%d", mul);
+      break;
+    case '/':
+      _div = a / b;
+      printf ("_div = %d", _div);
+      break;
+    case '%':
+      mod = a % b;
+      printf ("mod = %d", mod);
+      break;
+    default: printf ("\n Enter valid operator");
+        
+    }}
+
+
+
+
+
+
+
+19.) // For loop in c//
+
+
+#include<stdio.h>
+void main () {
+int i;
+// To print 1 to 10 using for loop//
+for(i=1;i<=10;i++)
+printf("%d",i);
+
+
+
+
+// Program find table of any number//
+
+
+#include<stdio.h>
+void main()
+{
+    int number,index,a;
+     // Enter value were you'll find the table of the number ehich you give as the input//
+     printf("Enter a value of a number: \n ");
+     scanf("%d",&number);
+     for(index=1;index<=20;index++)
+     {
+         a = number*index;
+         printf("%d * %d = %d \n",number,index,a);
+     }
+     
+}
+
+//Program to find factorial of any number//
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+void main()
+{
+    int factorial,n;
+    printf("Enter the number of finding the factorial of: ");
+    scanf("%d",&n);
+    factorial = 1;
+    for(int i=1;i<=n;i++)
+    {
+    factorial=factorial*i;
+    }
+printf("\n Factorial of %d is %d",n,factorial);
+}
+
+
+
+20.) //While loop//
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("%d \n ",i);
+        i++;
+    }
+    getch();
+    
+}
+
+
+b.) //number series//
+
+ #include<stdio.h>
+#include<conio.h>
+void main ()
+{
+    int n,i=1;
+    printf("Enter a number till were you want the number series to break: \n ");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("%d \n ",i);
+        i++;
+    }
+    getch();
+    
+}
+
+
+/*Topic : break statement;
+Date : 19-01-2023
+Time : 10:09 am 
+#include<stdio.h> 
+void main()
+{
+int a,i,sum=0;
+for(i=1;i<=5;i++)
+{
+    printf("Enter a number: ");
+    scanf("%d",&a);
+    if(a<0)
+    {
+        break;
+    }
+    sum = sum+a;
+}
+printf("%d",sum);
+printf("\n You have entered a negative number so your input value is made into break statement");
+}
+
+//While loop//
+#include<stdio.h> 
+void main()
+{
+int a,sum=0;
+while(1)
+{
+    printf("Enter a number: ");
+    scanf("%d",&a);
+    if(a<0)
+    {
+    break;
+    }
+    sum = sum+a;
+}
+printf ("%d",sum);
+}
+
+// Do-while loop//
+#include<stdio.h> 
+void main()
+{
+int a,sum=0;
+do
+{
+    printf("Enter a number: ");
+    scanf("%d",&a);
+    if(a<0)
+    break;
+    sum=sum+a;
+}
+while(1);
+printf("%d",sum);
+}*/
+
+
+/* Continue statement */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,a,i,sum=0;
+/* Input the value of n*/
+printf("Enter the value of n : ");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+    printf("Enter an integer: ");
+    scanf("%d",&a);
+    if (a>0)
+    {
+        continue;
+    }
+sum = sum + a;
+printf("%d",sum);
+    
+}
+}
+
+/* c-43 Need of nested loops in c */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,n,x;
+printf("Enter the value of n : ");
+scanf("%d",&n);
+printf("Enter the value of x : ");
+    scanf("%d",&x);
+for(j=1;j<=n;j++)
+{
+
+    for(i=1;i<=x;i++)
+    {
+        printf("*");
+    }
+    printf("\n");
+}
+printf(" \n Thank you akkai \n");
+}
+
+/* Nested while loop in c */
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+    int i,j,n,x;
+    printf("Enter the value of n : ");
+    scanf("%d",&n);
+    printf("Enter the value of x :  ");
+    scanf("%d",&x);
+    i = 0,j=1;
+    while (i<n)
+    {
+        while(j<=x)
+        {
+            printf("%d",j++);
+        }
+        printf("%d",i++);
+    }
+    printf("\n Exit_success");
+}
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+    int i=0,j=1;
+    while(i<3)
+  {
+      while(j<=3)
+      {
+          
+      }
+  }
+  printf("%d%d",i++,j++);
+}
+
+
+ARRAYS 
+
+Collection of similar datatypes stored at continous memory locations
+
+How to declare an array?
+
+Datatype arrayname[arraysize]
+
+for ex : float mark[5]
+
+Here, In this program we are just printing one element in an array 
+
+#include<stdio.h>
+void main(){
+int marks[3];
+marks[0]=5;
+marks[1]=6;
+marks[2]=7;
+printf("%d",marks[0]);
+}
+
+
+Here, In this program we are printing all elements present in this array 
+
+#include<stdio.h>
+void main(){
+int marks[3];
+marks[0]=5;
+marks[1]=6;
+marks[2]=7;
+for(int i=0;i<3;i++)
+printf("%d\n",marks[i]);
+}
+
+
+input for array - scanf("%d",marks[0]);
+
+output for array - printf("%d",marks[0]);
+
+
+#include<stdio.h>
+int main(){
+int marks[3];//declaration of an array
+marks[0]=5;//Intialization of an array
+marks[1]=6;
+marks[2]=7;
+for(int i=0;i<3;i++)//transversal of an array
+printf("%d \n",marks[i]);
+return 0;
+}
+
+
+
+//Take 5 values form the user and print the values of the elements stored in the array//
+#include <stdio.h>
+int main() {
+int n;
+printf("Enter the value of n ");
+scanf("%d",&n);
+int values[n];
+printf("Enter 5 integers: ");
+for(int i = 0; i < 5; ++i)
+{
+scanf("%d", &values[i]);
+}
+printf("Displaying integers: ");
+for(int i = 0; i < 5; ++i) 
+{
+printf("%d\n", values[i]);
+}
+return 0;
+}
+
+
+#include <stdio.h>
+int main() {
+int n;
+printf("Enter the value of n ");
+scanf("%d",&n);
+int values[n];
+printf("Enter %d integers: ",n);
+for(int i = 0; i < n; ++i)
+{
+scanf("%d", &values[i]);
+printf("%d\n", values[i]);
+}
+}
+
+//Take n values form the user and print the values of the elements stored in the array// 
+//Nested for loop//
+#include <stdio.h>
+int main() {
+int n;
+printf("Enter the value of n ");
+scanf("%d",&n);
+int values[n];
+printf("Enter %d integers: ",n);
+for(int i = 0; i < n; ++i)
+{
+scanf("%d", &values[i]);
+}
+printf("Displaying integers: ");
+for(int i = 0; i < n; ++i) 
+{
+printf("%d\n", values[i]);
+}
+return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+int mark[5] = {19, 10, 8, 17, 9};
+// Set the value of the third element to -1
+mark[2] = -1;
+// Set the value of the fifth element to 0
+mark[4] = 0;
+for(int i=0;i<5;i++)
+{
+    printf("%d \n",mark[i]);
+}
+return 0;
+}
+
+
+Normal printing of array
+
+
+#include <stdio.h>
+int main(){
+int values[5];
+for(int i = 0; i < 5; ++i)
+{
+scanf("%d", &values[i]);
+}
+printf("Displaying integers: ");
+for(int i = 0; i < 5; ++i) 
+{
+printf("%d \n", values[i]);
+}
+return 0;
+}
+
+
+Reverse 
+
+#include <stdio.h>
+int main(){
+int values[5];
+for(int i = 0; i < 5; ++i)
+{
+scanf("%d", &values[i]);
+}
+printf("\n array element at index %d is %d",i,a[i]);
+for(int i = 4; i >= 0; i--) 
+{
+printf("%d \n", values[i]);
+}
+return 0;
+}
+
+
+Proper understaanding combination of both
+
+#include <stdio.h>
+int main(){
+int a[5];
+printf("Enter 5 numbers:");
+for(int i = 0; i < 5; ++i)
+{
+scanf("%d", &a[i]);
+}
+printf("Displaying integers: ");
+for(int i = 0; i < 5; ++i) 
+{
+printf("\n array element at index %d is %d \n",i,a[i]);
+}
+for(int i = 4; i >= 0; i--) 
+{
+printf("%d \n", a[i]);
+}
+return 0;
+}
+
+
+
+
+// "n" students management system//
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+int main()
+{
+    int n, m;
+    printf("Enter the value of n:");
+    scanf("%d", &n);
+    printf("Enter the value of m:");
+    scanf("%d", &m);
+    int rollno[n], mathsmarks[n], sciencemarks[n], socialmarks[n], total[n], average[n], cgpa[n];
+    char name[n][m];
+    for(int i = 0; i < n; i++)
+    {
+        printf("Enter the value of the rollnumber:");
+        scanf("%d", &rollno[i]);
+        printf("Enter the name of the student:");
+        scanf("%s", name[i]);
+        printf("Enter the number of mathsmarks attained:");
+        scanf("%d", &mathsmarks[i]);
+        printf("Enter the number of sciencemarks attained:");
+        scanf("%d", &sciencemarks[i]);
+        printf("Enter the number of socialmarks attained:");
+        scanf("%d", &socialmarks[i]);
+        total[i] = mathsmarks[i] + socialmarks[i] + sciencemarks[i];
+        average[i] = total[i] / 3;
+        cgpa[i] = round(average[i] / 10.0);
+    }
+    for(int i = 0; i < n; i++)
+    {
+        printf("Name: %s\n", name[i]);
+        printf("Rollno: %d\n", rollno[i]);
+        printf("Maths marks: %d\n", mathsmarks[i]);
+        printf("Science marks: %d\n", sciencemarks[i]);
+        printf("Social marks: %d\n", socialmarks[i]);
+        if(cgpa[i] > 9.5)
+            printf("Outstanding\n");
+        else if(cgpa[i] > 8.6)
+            printf("Very Good\n");
+        else if(cgpa[i] > 8.1)
+            printf("Good\n");
+        else if(cgpa[i] > 7.6)
+            printf("Okay\n");
+        else if(cgpa[i] > 7.1)
+            printf("Can do better\n");}
+             return 0;
+}
+
+
+Printing patterns College wallah 
+
+#include<stdio.h>
+void main()
+{
+	printf("*****\n*****\n*****\n*****\n*****");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

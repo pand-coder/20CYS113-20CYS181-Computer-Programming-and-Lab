@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    struct complexno
+    {
+        int realno;
+        int imgno;
+    };
+    
+    struct complexno c,d;
+    scanf("%d",&c.realno);
+    scanf("%d",&c.imgno);
+     scanf("%d",&d.realno);
+     scanf("%d",&d.imgno);
+     int p,q,r,s;
+p=c.realno+d.realno;
+q=c.imgno+d.imgno;
+printf("\n%d+%di",p,q);
+r=c.realno-d.realno;
+s=c.imgno-d.imgno;
+printf("\n%d+%di",r,s);
+return 0;
+}
